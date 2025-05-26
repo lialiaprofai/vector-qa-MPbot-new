@@ -146,7 +146,7 @@ class QABot:
 
         if not qa_data_df.empty:
             logger.info(f"Прочитано {len(qa_data_df)} строк из Google Sheets. Начинаем добавление в векторную базу.")
-            self.vector_store.clear_collection() 
+            self.vector_store.reset() 
             logger.info(f"Старая коллекция в векторной базе очищена перед загрузкой новых данных.")
             
             for index, row in qa_data_df.iterrows():
