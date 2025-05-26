@@ -35,7 +35,7 @@ class GoogleSheetsManager:
             self.spreadsheet_id = None
 
 
-    def get_qa_data(self, range_name='Sheet1!A:D'):
+    def get_qa_data(self, range_name='Регистрация ТМ!A:D'):
         """
         Чтение данных из Google таблицы.
         Предполагается, что колонка 'Вопрос' - A, 'Ответ' - B, 'Категория' - C, 'Ключевые слова' - D.
