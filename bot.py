@@ -249,8 +249,8 @@ def webhook():
 
             if search_results and search_results.get('documents') and search_results.get('distances'):
                 if search_results['distances'][0] and search_results['documents'][0]:
-                    first_distance = search_results['distances'][0][0] 
-                    first_document = search_results['documents'][0][0]
+                    first_distance = search_results['distances'][0] 
+                    first_document = search_results['documents'][0]
                     logger.info(f"Найден ближайший документ с дистанцией: {first_distance:.4f}")
                     if first_distance <= distance_threshold:
                         retrieved_context_text = first_document
