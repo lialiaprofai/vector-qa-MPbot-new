@@ -11,3 +11,4 @@ mpbot-qa-registrationtm-823771788cbc.json
 
 # Local database file (if 'db' folder contains local database)
 db/
+chat_history.db # <-- ДОБАВЛЕНО
